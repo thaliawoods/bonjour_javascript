@@ -1,3 +1,5 @@
+const username = prompt("Veuillez saisir votre prénom :");
+
 // Étape 1 : organisation de dossiers
 
 // Étape 2 : premier code
@@ -48,10 +50,17 @@ const sayHello = (firstname, hour) => {
         message = "Bonsoir " + firstname + " !";
     }
 
-    console.log(message);
+    // console.log(message);
+    document.querySelector('h1').innerText = message;
 
 };
 
 sayHello("Love",22);
 sayHello("Loli",12);
 sayHello("Lowlow",2);
+
+// (bonus) Étape 5 : HTML, liaison avec JavaScript
+
+// (bonus) Étape 6 : Première manipulation du DOM 😱
+
+sayHello(username, 22);
